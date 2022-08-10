@@ -6,9 +6,11 @@ import { EisHockeyApp } from './eishockey-app';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';
-import { NavBarModule } from './shared/navbar/navbar';
-import { HeaderModule } from './sections/header/header';
+import { NavBarModule } from './shared/navbar/navbar.component';
+import { HeaderModule } from './shared/header/header.component';
 import { AboutModule } from './sections/about/about';
+import { FooterModule } from './shared/footer/footer.component';
+import { CookiePopupModule } from './shared/cookie-popup/cookie-popup.component';
 
 @NgModule({
   declarations: [EisHockeyApp],
@@ -20,6 +22,8 @@ import { AboutModule } from './sections/about/about';
     NavBarModule,
     HeaderModule,
     AboutModule,
+    FooterModule,
+    CookiePopupModule,
   ],
   providers: [],
   bootstrap: [EisHockeyApp],

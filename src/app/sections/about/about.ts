@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { NavigationFocusModule } from 'src/app/shared/navigation-focus/navigation-focus';
+import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { HeaderModule } from 'src/app/shared/header/header.component';
 
 @Component({
   selector: 'app-about',
@@ -21,6 +22,7 @@ export class About {}
     MatDividerModule,
     MatCardModule,
     CommonModule,
+    HeaderModule,
   ],
   exports: [About],
   declarations: [About],
