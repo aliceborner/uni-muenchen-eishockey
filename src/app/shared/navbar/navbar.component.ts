@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
-import { SECTIONS } from '../menu-items/menu-items';
+import { SECTIONS } from '../menu-items/menu-items.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Subscription } from 'rxjs';
-import { NavigationFocusService } from '../navigation-focus/navigation-focus.service';
+import { NavigationFocusService } from '../../services/navigation-focus/navigation-focus.service';
 
 const SECTIONS_KEYS = Object.keys(SECTIONS);
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navbar.html',
-  styleUrls: ['./navbar.scss'],
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
-export class NavBar implements OnDestroy {
+export class NavBarComponent implements OnDestroy {
   private subscriptions = new Subscription();
   isNextVersion = location.hostname.startsWith('next.material.angular.io');
   skipLinkHref: string | null | undefined;
@@ -49,7 +49,7 @@ export class NavBar implements OnDestroy {
     MatMenuModule,
     RouterModule,
   ],
-  exports: [NavBar],
-  declarations: [NavBar],
+  exports: [NavBarComponent],
+  declarations: [NavBarComponent],
 })
 export class NavBarModule {}
