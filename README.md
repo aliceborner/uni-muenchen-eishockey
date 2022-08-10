@@ -1,10 +1,16 @@
 # Uni München Eishockey
 
-Live at: https://aliceborner.github.io/uni-muenchen-eishockey/
-Kanban board: https://trello.com/b/PZlPsBDH/uni-m%C3%BCnchen-eishockey
-Design: https://www.figma.com/file/smuv8HkG2vr8UdecwlyMuB/Uni-M%C3%BCnchen-Eishockey?node-id=0%3A1
+_Work In Progress_ Website for the amazing Uni München Ice Hockey team from Munich.
+
+This project is live [here](https://aliceborner.github.io/uni-muenchen-eishockey/) and more details on what is about to come you can find at:
+
+- [Kanban board with the project plan in Trello](https://trello.com/b/PZlPsBDH/uni-m%C3%BCnchen-eishockey)
+- [UI Design in Figma](https://www.figma.com/file/smuv8HkG2vr8UdecwlyMuB/Uni-M%C3%BCnchen-Eishockey?node-id=0%3A1)
 
 ## Tech stack
+
+- Angular
+-
 
 ### TODO
 
