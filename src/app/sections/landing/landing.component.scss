@@ -1,36 +1,36 @@
-.section {
+:host {
   display: flex;
   justify-content: space-between;
   background-color: #f7f7f7;
 
   height: 100%;
   width: 100%;
+}
 
-  .left {
-    display: flex;
-    align-items: center;
-  }
+.left {
+  display: flex;
+  align-items: center;
+}
 
-  .button {
-    border-radius: 40px;
-    width: 200px;
-  }
+.button {
+  border-radius: 40px;
+  width: 200px;
+}
 
-  .text {
-    padding-left: 32px;
-    z-index: 3;
-  }
+.text {
+  padding-left: 32px;
+  z-index: 3;
+}
 
-  .background {
-    width: 50%;
-    background-image: url("../../../assets/images/background.jpg");
-    background-size: cover;
-    opacity: 0.5;
-  }
+.background {
+  width: 50%;
+  background-image: url("../../../assets/images/background.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 
 @media (max-width: 720px) {
-  .section .background {
+  .background {
     display: none;
   }
 }
