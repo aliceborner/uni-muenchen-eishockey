@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgModule, OnInit } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatCardModule } from '@angular/material/card';
+import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 import { LandingModule } from 'src/app/sections/landing/landing.component';
 import { ABOUT_ITEMS } from 'src/app/shared/about-items/about-items.component';
 

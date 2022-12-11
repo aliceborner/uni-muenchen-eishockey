@@ -1,11 +1,11 @@
 import { SocialMediaModule } from './../../shared/social-media/social-media.component';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatCardModule } from '@angular/material/card';
+import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 import { SocialMediaComponent } from '../../shared/social-media/social-media.component';
 
 @Component({
