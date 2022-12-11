@@ -3,9 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 8px 16px;
-  background-color: #D4AF37;
-  justify-content: flex-end;
-  height: 70px;
+  justify-content: space-between;
 
   > .mat-button {
     &:last-child {
@@ -14,75 +12,19 @@
   }
 }
 
-.flex-spacer {
-  flex-grow: 1;
+a {
+  font-size: large;
 }
 
 .logo {
-  position: absolute;
+  width: 80px;
   left: 0;
-  margin-left: 2%;
-}
-
-.angular-logo {
-  height: 26px;
-  margin: 0 4px 3px 0;
-  vertical-align: middle;
 }
 
 .github-logo {
-  height: 21px;
-  margin: 0 7px 2px 0;
-  vertical-align: middle;
+  height: 40px;
 }
 
-.navbar-link {
-  text-decoration: inherit;
-  flex: 1;
-}
-
-.navbar {
-  display: none;
-}
-
-.navbar-show-small {
-  display: none;
-}
-
-.skip-link-wrapper {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-}
-
-/**
-  * Rules for when the device is detected to be a small screen.
-  * Moves content two rows instead of one.
-  */
 @media (max-width: 720px) {
-  .navbar-hide-small {
-    display: none;
-  }
 
-  .navbar-show-small {
-    display: block;
-  }
-
-  .navbar {
-    display: flex;
-  }
-
-  .navbar--github-logo {
-    margin: 0;
-  }
-}
-
-theme-picker {
-  display: none;
-
-  @media (min-width: 328px) {
-    display: block;
-  }
 }

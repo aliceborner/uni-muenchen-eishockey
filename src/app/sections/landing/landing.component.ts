@@ -1,3 +1,4 @@
+import { SocialMediaModule } from './../../shared/social-media/social-media.component';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
@@ -5,15 +6,19 @@ import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigat
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { SocialMediaComponent } from '../../shared/social-media/social-media.component';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-landing',
+  templateUrl: './landing.component.html',
+  styleUrls: ['./landing.component.scss'],
 })
-export class HeaderComponent {}
+export class LandingComponent {}
 
 @NgModule({
+  exports: [LandingComponent],
+  declarations: [LandingComponent],
+  providers: [],
   imports: [
     MatButtonModule,
     NavigationFocusModule,
@@ -21,9 +26,7 @@ export class HeaderComponent {}
     MatDividerModule,
     MatCardModule,
     CommonModule,
+    SocialMediaModule,
   ],
-  exports: [HeaderComponent],
-  declarations: [HeaderComponent],
-  providers: [],
 })
-export class HeaderModule {}
+export class LandingModule {}

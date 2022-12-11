@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TrainingModule } from './sections/training/training.component';
 
-import { AppRoutingModule } from './routing.module';
-import { EisHockeyApp } from './eishockey-app';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EisHockeyApp } from './eishockey-app';
+import { AppRoutingModule } from './routing.module';
 
 import { MatMenuModule } from '@angular/material/menu';
-import { NavBarModule } from './shared/navbar/navbar.component';
-import { HeaderModule } from './shared/header/header.component';
-import { AboutModule } from './sections/about/about';
-import { FooterModule } from './shared/footer/footer.component';
+import { AboutModule } from './sections/about/about.component';
+import { ContactModule } from './sections/contact/contact.component';
+import { LandingModule } from './sections/landing/landing.component';
 import { CookiePopupModule } from './shared/cookie-popup/cookie-popup.component';
+import { FooterModule } from './shared/footer/footer.component';
+import { NavBarModule } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [EisHockeyApp],
@@ -20,8 +22,10 @@ import { CookiePopupModule } from './shared/cookie-popup/cookie-popup.component'
     BrowserAnimationsModule,
     MatMenuModule,
     NavBarModule,
-    HeaderModule,
+    LandingModule,
     AboutModule,
+    TrainingModule,
+    ContactModule,
     FooterModule,
     CookiePopupModule,
   ],

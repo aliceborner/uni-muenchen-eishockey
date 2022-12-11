@@ -1,0 +1,39 @@
+<main class="about-section">
+  <div class="about">
+    <h1>Über uns</h1>
+    <p>
+      Wir sind ein Eishockey-Hobbyteam aus München und Umfeld. Zusammengefunden
+      hat sich das Team im offiziellen Trainingsbetrieb des Zentralen
+      Hochschulsports (ZHS). Seit einigen Jahren treten wir in der Münchner
+      Eishockey Liga (früher Munich Hobby Cup) an. Mit dem Aufstieg in die Liga
+      1 konnte in der Saison 2009/10 der bisher größte Erfolg errungen werden.
+      In der Saison 2010/2011 folgte der MHC-Pokalsieg und nur ein Jahr später
+      die MHC-Meisterschaft mit einer makellosen Bilanz von 13 Siegen und einem
+      Unentschieden. Zu der Saison 2011/2012 wurde erstmals eine 2. Mannschaft
+      für die 2. Liga der MEL gemeldet. Nachdem in den Folgejahren der Titel
+      meist knapp verpasst wurde, konnte in der Saison 20015/16 endlich ein
+      zweites Mal der Meisterschaftstitel gefeiert werden. Zur Saison 2017/18
+      haben wir uns entschlossen für unsere 1.Mannschaft eine neue
+      Herausforderung zu suchen und in der Rosenheimer Hockey League (RHL) in
+      der 1.Liga zu melden. Nach der Zwangspause aufgrund der Corona-Pandemie
+      geht die Uni München in der Saison 2021/22 nur noch mit einem Team in der
+      MEL 1 an den Start. Zusätzlich bestreiten wir jede Saison
+      Freundschaftsspiele und Turniere. Einige von uns sind auch in der
+      Hochschulauswahl aktiv, die die Technische Unversität München offiziell
+      bei Turnieren vertritt. Grundsätzlich kann jeder bei uns mitspielen. Wir
+      sind immer auf der Suche nach Verstärkungen. Allerdings sollte man bereits
+      über Spielerfahrung verfügen. Bei Interesse einfach bei uns melden und am
+      besten zu einem Probetraining vorbeischauen, damit wir uns einen Eindruck
+      von euch machen können.
+    </p>
+  </div>
+
+  <div class="items">
+    <div *ngFor="let key of itemsKeys">
+      <mat-card>
+        <mat-card-title>{{ items[key].title }}</mat-card-title>
+        <mat-card-content>{{ items[key].content }}</mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</main>

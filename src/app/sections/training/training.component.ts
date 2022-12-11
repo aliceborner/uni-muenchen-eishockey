@@ -1,3 +1,4 @@
+import { LandingModule } from '../landing/landing.component';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
@@ -5,14 +6,13 @@ import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigat
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
-import { HeaderModule } from 'src/app/shared/header/header.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.html',
-  styleUrls: ['./about.scss'],
+  selector: 'app-training',
+  templateUrl: './training.component.html',
+  styleUrls: ['./training.component.scss'],
 })
-export class About {}
+export class TrainingComponent {}
 
 @NgModule({
   imports: [
@@ -22,10 +22,10 @@ export class About {}
     MatDividerModule,
     MatCardModule,
     CommonModule,
-    HeaderModule,
+    LandingModule,
   ],
-  exports: [About],
-  declarations: [About],
+  exports: [TrainingComponent],
+  declarations: [TrainingComponent],
   providers: [],
 })
-export class AboutModule {}
+export class TrainingModule {}

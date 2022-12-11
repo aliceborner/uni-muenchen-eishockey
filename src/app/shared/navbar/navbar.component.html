@@ -1,13 +1,15 @@
 <nav class="navbar-header" aria-label="Top Toolbar">
-  <img class="logo" width="50" alt="Logo" src="../../../assets/old_logo.png" />
-  <a
-    mat-button
-    class="navbar-hide-small button"
-    *ngFor="let key of sectionKeys"
-    [routerLink]="key"
-    routerLinkActive="navbar-header-item-selected"
-    >{{sections[key].name}}</a
-  >
+  <img class="logo" alt="Logo" src="../../../assets/old_logo.png" />
+  <div>
+    <a
+      mat-button
+      *ngFor="let key of sectionKeys"
+      [routerLink]="key"
+      routerLinkActive="navbar-header-item-selected"
+      >{{ sections[key].name }}</a
+    >
+    <a mat-button href="https://www.mel-eishockey.de/" alt="MEL liga">Liga</a>
+  </div>
   <a
     mat-icon-button
     class="button"
@@ -15,8 +17,8 @@
     aria-label="GitHub Repository"
   >
     <img
-      class="angular-logo navbar--github-logo"
-      src="../../../assets/github-circle-white-transparent.svg"
+      class="github-logo"
+      src="../../../assets/github-logo.png"
       alt="angular"
     />
   </a>
