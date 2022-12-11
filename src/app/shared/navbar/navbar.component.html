@@ -3,15 +3,21 @@
   <div>
     <a
       mat-button
+      color="primary"
       *ngFor="let key of sectionKeys"
       [routerLink]="key"
       routerLinkActive="navbar-header-item-selected"
       >{{ sections[key].name }}</a
     >
-    <a mat-button href="https://www.mel-eishockey.de/" alt="MEL liga">Liga</a>
+    <a
+      mat-button
+      color="primary"
+      href="https://www.mel-eishockey.de/"
+      alt="MEL liga"
+      >Liga</a
+    >
   </div>
   <a
-    mat-icon-button
     class="button"
     href="https://github.com/aliceborner/uni-muenchen-eishockey"
     aria-label="GitHub Repository"
