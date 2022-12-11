@@ -6,7 +6,6 @@ export interface Section {
 const ABOUT = 'about';
 const KONTAKT = 'contact';
 const TRAINING = 'training';
-const LIGA = 'liga';
 
 export const SECTIONS: { [key: string]: Section } = {
   [ABOUT]: {

@@ -7,8 +7,8 @@ import {
 } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { NavigationFocusService } from './navigation-focus.service';
 import { NavigationFocusModule } from './navigation-focus';
+import { NavigationFocusService } from './navigation-focus.service';
 
 describe('Navigation focus service', () => {
   let navigationFocusService: NavigationFocusService;

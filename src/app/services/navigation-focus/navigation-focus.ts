@@ -1,8 +1,8 @@
 import {
-  NgModule,
   Directive,
   ElementRef,
   HostBinding,
+  NgModule,
   OnDestroy,
 } from '@angular/core';
 import { NavigationFocusService } from './navigation-focus.service';

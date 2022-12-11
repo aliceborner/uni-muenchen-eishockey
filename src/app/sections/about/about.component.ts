@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, OnInit } from '@angular/core';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
-import { MatIconModule } from '@angular/material/icon';
+import { Component, NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
+import { MatIconModule } from '@angular/material/icon';
 import { LandingModule } from 'src/app/sections/landing/landing.component';
+import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
 import { ABOUT_ITEMS } from 'src/app/shared/about-items/about-items.component';
 
 @Component({
@@ -28,11 +28,11 @@ export class AboutComponent {
   declarations: [AboutComponent],
   providers: [],
   imports: [
-    MatButtonModule,
     NavigationFocusModule,
     MatIconModule,
     MatDividerModule,
     MatCardModule,
+    MatButtonModule,
     CommonModule,
     LandingModule,
   ],

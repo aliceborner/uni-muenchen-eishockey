@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EisHockeyApp } from './eishockey-app';
 import { AppRoutingModule } from './routing.module';
 
-import { MatLegacyMenuModule as MatMenuModule } from '@angular/material/legacy-menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { AboutModule } from './sections/about/about.component';
 import { ContactModule } from './sections/contact/contact.component';
 import { LandingModule } from './sections/landing/landing.component';

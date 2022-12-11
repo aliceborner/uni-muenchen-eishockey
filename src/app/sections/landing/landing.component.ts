@@ -1,12 +1,10 @@
-import { SocialMediaModule } from './../../shared/social-media/social-media.component';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
-import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
-import { SocialMediaComponent } from '../../shared/social-media/social-media.component';
+import { MatIconModule } from '@angular/material/icon';
+import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
+import { SocialMediaModule } from './../../shared/social-media/social-media.component';
 
 @Component({
   selector: 'app-landing',
@@ -24,7 +22,6 @@ export class LandingComponent {}
     NavigationFocusModule,
     MatIconModule,
     MatDividerModule,
-    MatCardModule,
     CommonModule,
     SocialMediaModule,
   ],
