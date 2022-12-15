@@ -7,14 +7,14 @@ import {
 } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { NavigationFocusModule } from './navigation-focus';
+import { NavigationFocusModule } from './navigation-focus.component';
 import { NavigationFocusService } from './navigation-focus.service';
 
 describe('Navigation focus service', () => {
   let navigationFocusService: NavigationFocusService;
   let router: Router;
   let zone: NgZone;
-  let fixture: ComponentFixture<NavigationFocusTest>;
+  let fixture: ComponentFixture<NavigationFocusComponent>;
 
   const navigate = (url: string) => {
     zone.run(() => router.navigateByUrl(url));
@@ -25,16 +25,16 @@ describe('Navigation focus service', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule.withRoutes([
-          { path: '', component: RouteTest },
-          { path: 'cdk', component: RouteTest },
-          { path: 'guides', component: RouteTest },
+          { path: '', component: RouteComponent },
+          { path: 'cdk', component: RouteComponent },
+          { path: 'guides', component: RouteComponent },
         ]),
         NavigationFocusModule,
       ],
       providers: [NavigationFocusService],
-      declarations: [NavigationFocusTest, RouteTest],
+      declarations: [NavigationFocusComponent, RouteComponent],
     });
-    fixture = TestBed.createComponent(NavigationFocusTest);
+    fixture = TestBed.createComponent(NavigationFocusComponent);
   });
 
   beforeEach(() => {
@@ -139,19 +139,19 @@ describe('Navigation focus service', () => {
 });
 
 @Component({
-  selector: 'navigation-focus-test',
+  selector: 'app-navigation-focus-test',
   template: `
     <button id="target1">Target 1</button>
     <button id="target2">Target 2</button>
     <button class="no-id" focusOnNavigation>Target 3</button>
   `,
 })
-class NavigationFocusTest {}
+class NavigationFocusComponent {}
 @NgModule({
   imports: [NavigationFocusModule],
 })
 @Component({
-  selector: 'route-test',
+  selector: 'app-route-test',
   template: '',
 })
-class RouteTest {}
+class RouteComponent {}

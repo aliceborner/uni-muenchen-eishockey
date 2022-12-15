@@ -5,7 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { LandingModule } from 'src/app/sections/landing/landing.component';
-import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus';
+import { NavigationFocusModule } from 'src/app/services/navigation-focus/navigation-focus.component';
 import { ABOUT_ITEMS } from 'src/app/shared/about-items/about-items.component';
 
 @Component({

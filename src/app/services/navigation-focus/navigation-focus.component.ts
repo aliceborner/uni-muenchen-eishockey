@@ -9,9 +9,9 @@ import { NavigationFocusService } from './navigation-focus.service';
 
 let uid = 0;
 @Directive({
-  selector: '[focusOnNavigation]',
+  selector: '[appFocusOnNavigation]',
 })
-export class NavigationFocus implements OnDestroy {
+export class NavigationFocusDirective implements OnDestroy {
   @HostBinding('tabindex') readonly tabindex = '-1';
   @HostBinding('style.outline') readonly outline = 'none';
 
@@ -34,7 +34,7 @@ export class NavigationFocus implements OnDestroy {
   }
 }
 @NgModule({
-  declarations: [NavigationFocus],
-  exports: [NavigationFocus],
+  declarations: [NavigationFocusDirective],
+  exports: [NavigationFocusDirective],
 })
 export class NavigationFocusModule {}

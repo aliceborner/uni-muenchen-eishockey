@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Component, NgModule, OnInit } from '@angular/core';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyMenuModule as MatMenuModule } from '@angular/material/legacy-menu';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,20 +8,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './social-media.component.html',
   styleUrls: ['./social-media.component.scss'],
 })
-export class SocialMediaComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class SocialMediaComponent {}
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    MatButtonModule,
-    MatMenuModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [SocialMediaComponent],
   declarations: [SocialMediaComponent],
 })

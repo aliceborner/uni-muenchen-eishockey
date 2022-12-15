@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TrainingModule } from './sections/training/training.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EisHockeyApp } from './eishockey-app';
+import { EisHockeyComponent } from './eishockey.component';
 import { AppRoutingModule } from './routing.module';
 
 import { MatMenuModule } from '@angular/material/menu';
@@ -15,7 +15,7 @@ import { FooterModule } from './shared/footer/footer.component';
 import { NavBarModule } from './shared/navbar/navbar.component';
 
 @NgModule({
-  declarations: [EisHockeyApp],
+  declarations: [EisHockeyComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,6 +30,6 @@ import { NavBarModule } from './shared/navbar/navbar.component';
     CookiePopupModule,
   ],
   providers: [],
-  bootstrap: [EisHockeyApp],
+  bootstrap: [EisHockeyComponent],
 })
 export class AppModule {}
