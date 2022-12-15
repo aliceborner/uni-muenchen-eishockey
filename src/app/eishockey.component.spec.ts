@@ -21,13 +21,4 @@ describe('EisHockeyApp', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('uni-muenchen-eishockey');
   });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(EisHockeyComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'uni-muenchen-eishockey app is running!'
-    );
-  });
 });

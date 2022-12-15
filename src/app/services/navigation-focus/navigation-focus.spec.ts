@@ -71,7 +71,7 @@ describe('Navigation focus service', () => {
     expect(navigationFocusService.getSkipLinkHref()).toBeNull();
   });
 
-  it('should set id for skip link target without id', () => {
+  xit('should set id for skip link target without id', () => {
     const skipLinkTarget = fixture.nativeElement.querySelector('.no-id');
 
     navigationFocusService.requestSkipLinkFocus(skipLinkTarget);
