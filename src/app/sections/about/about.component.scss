@@ -1,7 +1,13 @@
 :host {
-  margin: 10px 50px;
+  min-height: 30vh;
   display: flex;
-  justify-content: space-between;
+  background-color: #333;
+}
+
+.button {
+  // TODO
+  border: none;
+  background-color: #f7f7f7;
 }
 
 .items {
@@ -9,6 +15,31 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
+}
+
+.details {
+  display: none;
+}
+
+.content {
+  color: white;
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 20px;
+  height: inherit;
+  overflow: hidden;
+}
+
+.show {
+  overflow: visible;
+  height: auto;
 }
 
 mat-card {
