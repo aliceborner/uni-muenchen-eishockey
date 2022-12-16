@@ -68,4 +68,4 @@ jobs:
           body: ${{ steps.changelog.outputs.clean_changelog }}
 
       - name: Deploy
-        uses: ./pages-build-deployment
+        run: npm run deploy --configuration --prod
