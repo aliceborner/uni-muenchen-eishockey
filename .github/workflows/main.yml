@@ -67,5 +67,8 @@ jobs:
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
 
-      - name: Deploy
-        run: npm run deploy --configuration --prod
+      # TODO fix deploy step, try to trigger the "pages build and deployment" workflow or make this deploy work
+      # using npx angular-cli-ghpages --dir=dist/uni-muenchen-eishockey or
+      # check if npm run deploy --configuration --prod is enough
+      # - name: Deploy
+      #   run: npm run deploy --configuration --prod
