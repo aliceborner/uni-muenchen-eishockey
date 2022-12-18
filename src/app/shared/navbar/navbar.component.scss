@@ -10,6 +10,11 @@
       margin-left: auto;
     }
   }
+
+  .mat-mdc-button {
+    color: black;
+    --mat-mdc-button-persistent-ripple-color: black;
+  }
 }
 
 a {
@@ -29,4 +34,10 @@ a {
   width: 60px;
   background-image: url("../../../assets/images/github-logo.png");
   background-size: cover;
+}
+
+@media (max-width: 720px) {
+  .github-logo {
+    display: none;
+  }
 }
