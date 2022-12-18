@@ -17,10 +17,16 @@ a {
 }
 
 .logo {
+  height: 90px;
   width: 80px;
   left: 0;
+  background-image: url("../../../assets/images/old_logo.png");
+  background-size: cover;
 }
 
 .github-logo {
-  height: 40px;
+  height: 60px;
+  width: 60px;
+  background-image: url("../../../assets/images/github-logo.png");
+  background-size: cover;
 }
