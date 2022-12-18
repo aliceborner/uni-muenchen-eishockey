@@ -8,7 +8,6 @@ import { AppRoutingModule } from './routing.module';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { AboutModule } from './sections/about/about.component';
-import { ContactModule } from './sections/contact/contact.component';
 import { LandingModule } from './sections/landing/landing.component';
 import { CookiePopupModule } from './shared/cookie-popup/cookie-popup.component';
 import { FooterModule } from './shared/footer/footer.component';
@@ -25,7 +24,6 @@ import { NavBarModule } from './shared/navbar/navbar.component';
     LandingModule,
     AboutModule,
     TrainingModule,
-    ContactModule,
     FooterModule,
     CookiePopupModule,
   ],
