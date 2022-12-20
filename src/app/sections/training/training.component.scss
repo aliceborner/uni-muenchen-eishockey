@@ -18,11 +18,11 @@
   display: none;
 }
 
-.image {
-  height: 350px;
-  width: 400px;
-  background-image: url("../../../assets/images/new_logo.png");
-  background-size: cover;
+.responsive {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  max-height: 350px;
 }
 
 @media (max-width: 720px) {
