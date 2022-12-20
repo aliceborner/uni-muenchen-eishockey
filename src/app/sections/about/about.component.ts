@@ -14,6 +14,14 @@ import { ABOUT_ITEMS } from 'src/app/shared/about-items/about-items.component';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  showDetails = false;
+
+  toggleShowDetails() {
+    console.log(this.showDetails);
+    this.showDetails = !this.showDetails;
+    console.log(this.showDetails);
+  }
+
   get items() {
     return ABOUT_ITEMS;
   }

@@ -1,8 +1,7 @@
 <div class="about">
   <h1>Über uns</h1>
-  <!-- TODO add this text in a internationalization file -->
   <div class="content">
-    <div ng-class="{ show: show }">
+    <div>
       <p>
         Wir sind ein Eishockey-Hobbyteam aus München und Umfeld.
         Zusammengefunden hat sich das Team im offiziellen Trainingsbetrieb des
@@ -17,8 +16,14 @@
         <br /><br />
       </p>
 
-      <!-- TODO make details appear when clicking on show more -->
-      <p class="details">
+      <p
+        [ngStyle]="{
+          display: showDetails ? 'block' : 'none',
+          height: showDetails ? 'auto' : '0',
+          overflow: showDetails ? 'visible' : 'hidden'
+        }"
+        [hidden]="!showDetails"
+      >
         Mit dem Aufstieg in die Liga 1 konnte in der Saison 2009/10 der bisher
         größte Erfolg errungen werden. In der Saison 2010/2011 folgte der
         MHC-Pokalsieg und nur ein Jahr später die MHC-Meisterschaft mit einer
@@ -39,7 +44,7 @@
         Spielerfahrung verfügen.
       </p>
     </div>
-    <button class="button">
+    <button class="button" (click)="toggleShowDetails()">
       Show More <i class="fa-solid fa-angle-down"></i>
     </button>
   </div>

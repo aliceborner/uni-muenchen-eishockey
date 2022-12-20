@@ -1,11 +1,14 @@
 :host {
   min-height: 30vh;
+  width: 100%;
   display: flex;
   background-color: #333;
 }
 
 .about {
   color: white;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,13 +31,4 @@
   background: none;
   font-size: 15px;
   color: white;
-}
-
-.details {
-  display: none;
-}
-
-.show {
-  overflow: visible;
-  height: auto;
 }
